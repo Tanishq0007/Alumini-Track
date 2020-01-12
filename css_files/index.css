@@ -1,0 +1,69 @@
+.container-fluid, html{
+    margin: 0px;
+    padding: 0px;
+}
+.center{
+height: 100%;
+width: 75%;
+display: block;
+}
+@media only screen and (min-width: 768px){
+	.center{
+		height: 100%;
+		width: 75%;
+		display: block;
+	}
+}
+@media only screen and (max-width: 768px){
+	.center{
+		display: none;
+    }
+    
+}
+.bg{
+    background-color: #3B9ED8;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    -webkit-clip-path:  polygon(100% 0, 100% 100%, 0 100%, 71% 64%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 71% 64%);
+}
+.soft_ui{
+    padding: 1em;
+    margin: 5%;
+    height: 85%;
+    width: 50%;
+    border-radius: .5em;
+    box-shadow: 
+        -12px -12px 12px 0 rgb(240, 240, 240),
+        12px 12px 12px 0 rgba(0,0,0,0.03);
+}
+h1, .sign{
+    text-align: center;
+}
+.sign a{
+    color: black !important;
+    text-decoration: none !important;
+}
+.forgot{
+    text-align: right;
+    color: black !important;
+    text-decoration: none !important;
+}
+.btn{
+    align-items: center;
+}
+hr
+{
+    color: black;
+    width: 20%;
+}
+.Foot p, .Foot a{
+    position: relative;
+    top: 50px;
+    color: black !important;
+    text-decoration: none !important;
+    z-index: 1;
+}
+
