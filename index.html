@@ -12,6 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function validate(){
+            var username = document.getElementById("uname");
+            var password = document.getElementById("pass");
+            if(username.value == "" || password.value == ""){
+                alert("Field Entry Required!!!");
+            }
+        } 
+    </script>
     <div class="bg"></div>
     <div class="container-fluid">
         <div class="row">
@@ -19,12 +28,14 @@
             <div class="col-lg-7 col-md-7 col-sm-12 d-flex justify-content-center">
                 <div class="soft_ui">
                     <h1>Sign In</h1>
-                    <p>Email</p>
-                    <input class="form-control" placeholder="Enter your email" type="email">
-                    <p class="pt-2">Password</p>
-                    <input class="form-control" placeholder="Enter your password" type="password">
-                    <a href="#"><p class="forgot">Forgot Password?</p></a>
-                    <div class="row d-flex justify-content-center"><button class="btn btn-outline-dark">LOGIN</button></div>
+                    <form>
+                        <p>Email</p>
+                        <input class="form-control" id="uname" placeholder="Enter your email" type="email">
+                        <p class="pt-2">Password</p>
+                        <input class="form-control" id="pass" placeholder="Enter your password" type="password">
+                        <a href="#"><p class="forgot">Forgot Password?</p></a>
+                        <div class="row d-flex justify-content-center"><button onclick="validate()" class="btn btn-outline-dark" type="submit">LOGIN</button></div>
+                    </form>
                     <div class="row d-flex justify-content-center"><hr><p>OR</p><hr></div>
                     <div class="row d-flex justify-content-center"><button class="btn btn-outline-dark">Login With Facebook/Gmail</button></div>
                     <p class="pt-3 sign">Don't have an account ? <a href="./html_file/Sign_up.html"> SIGN UP</a></p>

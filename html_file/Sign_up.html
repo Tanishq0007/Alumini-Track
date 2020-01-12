@@ -13,6 +13,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function validate(){
+            var username = document.getElementById("uname");
+            var password = document.getElementById("pass");
+            var year = document.getElementById("yr");
+            var con_password = document.getElementById("con_pass");
+            var Student = document.getElementById("std");
+            var email = document.getElementById("mail");
+            if(username.value == "" || password.value == "" || year.value == "" || con_password.value == "" || student.value == "" || email.value == ""){
+                alert("Field Entry Required!!!");
+            }
+        } 
+    </script>
     <div class="bg"></div>
     <div class="bg1"></div>
     <div class="bg2"></div>
@@ -20,20 +33,22 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <div class="soft_ui">
+                    <form>
                     <div class="row d-flex justify-content-center"><h1>Sign Up</h1></div>
                     <p>Full Nmae</p>
-                    <input class="form-control" placeholder="Eg. Nirbhay Shukla" type="text">
+                    <input id="uname" class="form-control" placeholder="Eg. Nirbhay Shukla" type="text">
                     <p class="pt-2">Year Of Passing</p>
-                    <input class="form-control" placeholder="Eg.2022" type="number">
+                    <input id="yr" class="form-control" placeholder="Eg.2022" type="number">
                     <p class="pt-2">Student Number</p>
-                    <input class="form-control" placeholder="Eg. 1810031" type="number">
+                    <input id="std" class="form-control" placeholder="Eg. 1810031" type="number">
                     <p class="pt-2">Email</p>
-                    <input class="form-control" placeholder="Eg. xyz@gmail.com" type="email">
+                    <input id="mail" class="form-control" placeholder="Eg. xyz@gmail.com" type="email">
                     <p class="pt-2">Password</p>
-                    <input class="form-control" placeholder="Enter your password" type="password">
+                    <input id="pass" class="form-control" placeholder="Enter your password" type="password">
                     <p class="pt-2">Confirm Password</p>
-                    <input class="form-control" placeholder="Confirm Password" type="password">
-                    <div class=" row d-flex justify-content-center pt-2"><button class="btn btn-outline-dark">SIGN UP</button></div>
+                    <input id="con-pass" class="form-control" placeholder="Confirm Password" type="password">
+                    <div class=" row d-flex justify-content-center pt-2"><button onclick="validate()" type="submit" class="btn btn-outline-dark">SIGN UP</button></div>
+                    </form>
                     <div class="row d-flex justify-content-center small"><p class="SIGNIN">Already have an account ? <a href="../index.html">SIGN IN</a></p></div>
                 </div>
             </div>
