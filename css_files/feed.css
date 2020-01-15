@@ -2,3 +2,59 @@
     margin: 0px;
     padding: 0px;
 }
+.navigation{
+    background-image:linear-gradient(to bottom, rgb(204, 244, 255) 5%, #ffffff 100%);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+input{
+    border-bottom: blue !important;
+}
+.profile{
+    border-radius: 100%;
+    height: auto;
+    width: 15%;
+}
+.pro{
+    text-shadow: 0px 2px 8px #2c2c2c ;
+}
+.post{
+    height: auto;
+    width: 100%;
+}
+.bo{
+    border: 1px solid #ccc;
+    display: flex;
+}
+.like{
+    height: 25px;
+    width: auto;
+}
+h5 ,p{
+    margin: 0 !important;
+    padding-left: 5px;
+}
+.sticky{
+    position: sticky;
+    top: 100px;
+}
+.scrol{
+    overflow: scroll;
+    height: 400px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+@media only screen and (min-width: 768px){
+	.dis{
+		display: block;
+	}
+}
+@media only screen and (max-width: 768px){
+	.dis{
+		display: none;
+    }
+    
+}
+

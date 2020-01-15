@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Feeds</title>
+    <link rel="stylesheet" type="text/css" href="../css_files/feed.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
 </head>
@@ -12,38 +13,117 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-    </nav> -->
+   
+    <!-- Navigation -->
     <div class="container-fluid navigation">
         <div class="row">
             <div class="col-3 pt-3"><p>LOGO</p></div>
-            <div class="col-6 d-flex justify-content-center pt-3">
-                <input class="form-control sm-2" type="search" placeholder="Search">
+            <div class="col-6 d-flex justify-content-center pt-3 dis">
+                <input class="form-control sm-2 pr-2" type="search" placeholder="Search">
                 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
             </div>
             <div class="col-3 d-flex justify-content-center pt-3">
                 <a><p>Messages</p></a>
-                <a><p class="pl-2">Profile</p></a>
+                <a><p class="pl-4">Profile</p></a>
             </div>
         </div>
         <hr>
     </div>
-    
+    <!-- Main Feeds -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12">
+
+
+
+                <!-- Loop Starts From here -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 d-flex">
+                        <div class="bo">
+                            <img class="profile p-2" src="../images/my.jpg">
+                            <p class="pl-2 pt-2 pro"><a>Tanishq</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <img class="post bo" src="../images/my.jpg">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <div class="bo">
+                        <img class="like pt-1 pl-2" src="../images/before.png" onclick="this.src='../images/after.png'">
+                        <img class="like pt-1 pl-2" src="../images/comment.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center pb-5">
+                    <div class="col-6">
+                        <div class="bo">
+                        <textarea rows="4" cols="70"></textarea>
+                        <button type="submit" class="btn btn-light">POST</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loop Ends Here -->
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 d-flex">
+                        <div class="bo">
+                            <img class="profile p-2" src="../images/my.jpg">
+                            <p class="pl-2 pt-2 pro"><a>Tanishq</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <img class="post bo" src="../images/my.jpg">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <div class="bo">
+                        <img class="like pt-1 pl-2" src="../images/before.png" onclick="this.src='../images/after.png'">
+                        <img class="like pt-1 pl-2" src="../images/comment.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center pb-5">
+                    <div class="col-6">
+                        <div class="bo">
+                        <textarea rows="4" cols="70"></textarea>
+                        <button type="submit" class="btn btn-light">POST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- College Eventa -->
+            <div class="col-3">
+                <div class="sticky">
+                <div class="row pl-5 pb-3">College Events</div>
+                <div class="row">
+                    <div class="scrol">
+                        <h5>Saksham</h5>
+                        <p>Anual Sports Event In feb</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <a><p class="p-2">About Us</p></a>
+                    <a><p class="p-2">Help</p></a>
+                    <a><p class="p-2">Contact Us</p></a>
+                    <a><p class="p-2">Devlopers</p class="p-2"></a>
+                    <p>&COPY; For Government Of Goa</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
