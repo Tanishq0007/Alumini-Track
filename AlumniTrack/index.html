@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--    Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <!--    Bootstrap-->
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
+    <!--    CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/7d7c1b05d0.js" crossorigin="anonymous"></script>
+
+    <title>Alumni Tracking Site</title>
+
+    <!--    Script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="expanded">
+        <div class="part1">
+            <div class="nav-cent content">
+                <ul class="list-links">
+                    <li id="btn-li">
+                        <i class="fas fa-envelope"></i>
+                    </li>
+                    <li class="btn-li">
+                        <i class="fas fa-bell"></i>
+                    </li>
+                    <li class="btn-li setting-opt">
+                        <i class="fas fa-cog"></i>
+                    </li>
+                </ul>
+
+                <div class="search-grp">
+                    <i class="fas fa-search"></i>
+                    <input class="text-field" type="search" placeholder="Search" spellcheck="false">
+                </div>
+
+                <div class="logo-holder">
+                    <img class="logo-image" src="./assets/images/login.png" alt="Logo">
+                    <div class="logo-name">ALUMNI</div>
+                </div>
+
+                <div class="setting-options show">
+                    <button>Edit Profile</button>
+                    <button>Log Out</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="root">
+
+        <div class="selector">
+            <div class="key-grp active">
+                <i class="fas fa-rss-square"></i>
+                <span>FEEDS</span>
+            </div>
+
+            <div class="key-grp">
+                <i class="fas fa-user"></i>
+                <span>ACCOUNT</span>
+            </div>
+        </div>
+
+        <!--        Feeds Section-->
+        <div class="content feed-main-box">
+            <div class="feed-box">
+
+                <div class="feed-holder-box">
+                    <div class="feed-by">
+                        <img class="post-by-image-sm" src="./assets/images/akgec.jpg" alt="college thumbnail">
+                        <div class="name-time-grp">
+                            <p class="feed-by-desc">Ajay Kumar Garg Engineering College</p>
+                            <p class="timestamp">2 hrs</p>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="post-image" src="./assets/images/img1.jpg" alt="">
+                    </div>
+
+                    <div class="post-tools">
+                        <ul>
+                            <li><i class="fas fa-thumbs-up"></i></li>
+                            <li><i class="fas fa-comment"></i></li>
+                            <li><i class="fas fa-share"></i></li>
+                        </ul>
+
+                        <div class="liked-by">
+                            Liked by <span class="name">Bill Gates</span> and <span class="name">1091...</span>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <img src="./assets/images/user.jpg" alt="profile-picture-thumbnail">
+                        <form class="comment-form" action=""><input spellcheck="false" placeholder="Add a comment..." type="text"></form>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+                <div class="feed-holder-box">
+                    <div class="feed-by">
+                        <img class="post-by-image-sm" src="./assets/images/akgec.jpg" alt="college thumbnail">
+                        <div class="name-time-grp">
+                            <p class="feed-by-desc">Ajay Kumar Garg Engineering College</p>
+                            <p class="timestamp">2 hrs</p>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="post-image" src="./assets/images/img1.jpg" alt="">
+                    </div>
+
+                    <div class="post-tools">
+                        <ul>
+                            <li><i class="fas fa-thumbs-up"></i></li>
+                            <li><i class="fas fa-comment"></i></li>
+                            <li><i class="fas fa-share"></i></li>
+                        </ul>
+
+                        <div class="liked-by">
+                            Liked by <span class="name">Bill Gates</span> and <span class="name">1091...</span>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <img src="./assets/images/user.jpg" alt="profile-picture-thumbnail">
+                        <form class="comment-form" action=""><input spellcheck="false" placeholder="Add a comment..." type="text"></form>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+
+
+
+                <!--
+                <div class="feed-holder-box">
+                    <div class="feed-by">
+                        <div class="post-by-image-sm">
+                            <img src="./assets/images/akgec.jpg" alt="">
+                        </div>
+                        <p>Ajay Kumar Garg Engineering College</p>
+                    </div>
+
+                    <div class="post-image">
+                        <img src="" alt="">
+                    </div>
+                </div>
+-->
+
+            </div>
+
+            <div class="sticky-feed">
+                <div class="batch-mate-main">
+                    <p class="asd">Connections</p>
+                    <input class="connection-search" type="search" placeholder="Search Connections">
+
+                    <div class="connections">
+
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <p class="mutual-ppl">People you may know</p>
+                    <div class="connections">
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                        <div class="connection">
+                            <img src="./assets/images/connection1.jpg" alt="user-image">
+                            <div class="name-grp">
+                                <p class="connection-name">Mark Zukerberg</p>
+                                <p class="username">vdcode</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="content account-box">
+            <div class="profile-main-box">
+
+                <div class="identifier">
+                    <img class="profile-image" src="./assets/images/user.jpg" alt="">
+                    <p class="name-id">Vishesh Dhawan</p>
+                </div>
+                <div class="details-holder">
+                    <p class="profile-username">visheshdvn</p>
+                    <p class="micro-detail"><span class="number">13</span> posts</p>
+                    <p class="micro-detail"><span class="number">123</span> connections</p>
+
+                    <div class="college">
+                        <img src="./assets/images/akgec.jpg" alt="">
+                        <div>
+                            <p class="college-name">Ajay Kumar Garg Engineering College </p>
+                            <p class="session-year">2018-22</p>
+                        </div>
+                    </div>
+
+                    <p class="address">
+                        Address Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minus, earum recusandae.
+                    </p>
+
+                    <div><a class="request-connection" href="#">Request contact details</a></div>
+                </div>
+
+            </div>
+
+            <div class="posts-box">
+                <h1>Posts</h1>
+
+                <div class="post-content">
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic-box">
+                        <div class="peek">
+                            <p class="caption-peek">Caption Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate nisi blanditiis.</p>
+                            <div class="micro-peek">
+                                <div class="likespeek"><i class="fas fa-thumbs-up"></i><span>21</span></div>
+                                <div class="comment-peek"><i class="fas fa-comment"></i><span>19</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Scripts-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--Bootstrap-->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+-->
+
+    <script src="assets/js/app.js"></script>
+</body></html>
